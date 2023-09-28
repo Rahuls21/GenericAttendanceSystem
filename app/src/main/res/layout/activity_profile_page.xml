@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".ProfilePage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/GreenLeaf"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/default_profile_photo"
+            android:onClick="selectImage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="FACULTY DETAILS"
+            android:textColor="@color/WildSand"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:scrollbarSize="25dp"
+                android:hint="FACULTY NAME"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorHint="@color/WildSand">
+
+                <EditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittextgradient"
+                    android:drawableStart="@drawable/name"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textColor="@color/WildSand" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:scrollbarSize="25dp"
+                android:text="EMAIL ID"
+                android:hint="EMAIL ID"
+                android:textColorHint="@color/WildSand">
+
+                <EditText
+                    android:id="@+id/EmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/edittextgradient"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="EMAIL ID"
+                    android:padding="5dp"
+                    android:textColor="@color/WildSand"
+                    android:textColorHint="@color/WildSand" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:scrollbarSize="25dp"
+                android:textColorHint="@color/WildSand">
+
+                 <EditText
+                    android:id="@+id/phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/edittextgradient"
+                    android:drawableStart="@drawable/mobile"
+                    android:drawablePadding="16dp"
+                    android:hint="PHONE NUMBER"
+
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/WildSand"
+                    android:textColorHint="@color/WildSand"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bloodgroup" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:scrollbarSize="25dp"
+                android:textColorHint="@color/WildSand">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/edittextgradient"
+                    android:drawableStart="@drawable/age"
+                    android:drawablePadding="16dp"
+                    android:hint="AGE"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/WildSand"
+                    android:textColorHint="@color/WildSand"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:scrollbarSize="25dp"
+                android:textColorHint="@color/WildSand">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/edittextgradient"
+                    android:drawableStart="@drawable/address"
+                    android:drawablePadding="16dp"
+                    android:hint="ADDRESS"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/WildSand"
+                    android:textColorHint="@color/WildSand" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginEnd="16dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@color/GreenLeaf"
+                    android:text="Cancel"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@color/GreenLeaf"
+                    android:padding="5dp"
+                    android:text="UPDATE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

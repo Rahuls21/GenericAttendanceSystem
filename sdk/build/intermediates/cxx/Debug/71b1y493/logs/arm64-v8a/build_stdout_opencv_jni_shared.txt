@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\1\Rahul\Final Project\rahul_demo\sdk\.cxx\Debug\71b1y493\arm64-v8a'
+ninja: no work to do.
